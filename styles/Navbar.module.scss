@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:wght@300;700&family=Work+Sans:wght@600;700&display=swap');
+
+
+.nav{
+height: 70px;
+width: 100vw;
+position: fixed;
+font-family: 'Poppins', sans-serif;
+box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
+-webkit-box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
+-moz-box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 40px 0 20px;
+
+.logo {
+  flex: 1.8;
+}
+
+.navSection {
+  flex: 1;
+
+  .navItems{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    .navItem{
+      font-size: 20px;
+      line-height: 40px;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+}
