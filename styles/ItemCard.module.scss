@@ -1,7 +1,7 @@
 .cardImage{
   margin-top: 70px;
   position: relative;
-
+  
   .img{
     border-radius: 13px;
   }
@@ -19,15 +19,25 @@
   }
 
   .desc{
+    display: block;
     position: absolute;
     bottom: 0;
     color:grey;
     padding: 15px;
     background-color: wheat;
     border-radius: 10px;
+    transform-origin: bottom;
+    transition: all 0.5s ease-in-out;
+    
+    .close{
+      position: absolute;
+      top: -7%;
+      right:0;
+    }
   }
   
   .none{
-    display: none; 
+    display: none;
+    bottom: -100%;
   }
 }
