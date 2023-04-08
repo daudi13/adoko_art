@@ -20,30 +20,30 @@ const data = [
     desc: "In this mesmerizing painting, a gorgeous bouquet of vibrant flowers is on display against a serene background. The colors of the flowers burst forth from the canvas, with shades of pink, yellow, orange, and red creating a beautiful tapestry of petals. The flowers are arranged in a way that draws the eye towards the center of the painting, where a particularly striking bloom takes center stage. The background is a tranquil sea of blue, with just a hint of greenery peeking through the corners. The overall effect is one of peacefulness and natural beauty.",
     dimensions: "120cm X 80cm",
   },
-  {
-    id: 3,
-    image: img3,
-    desc: "In this mesmerizing painting, a gorgeous bouquet of vibrant flowers is on display against a serene background. The colors of the flowers burst forth from the canvas, with shades of pink, yellow, orange, and red creating a beautiful tapestry of petals. The flowers are arranged in a way that draws the eye towards the center of the painting, where a particularly striking bloom takes center stage. The background is a tranquil sea of blue, with just a hint of greenery peeking through the corners. The overall effect is one of peacefulness and natural beauty.",
-    dimensions: "120cm X 80cm",
-  },
+  // {
+  //   id: 3,
+  //   image: img3,
+  //   desc: "In this mesmerizing painting, a gorgeous bouquet of vibrant flowers is on display against a serene background. The colors of the flowers burst forth from the canvas, with shades of pink, yellow, orange, and red creating a beautiful tapestry of petals. The flowers are arranged in a way that draws the eye towards the center of the painting, where a particularly striking bloom takes center stage. The background is a tranquil sea of blue, with just a hint of greenery peeking through the corners. The overall effect is one of peacefulness and natural beauty.",
+  //   dimensions: "120cm X 80cm",
+  // },
   {
     id: 4,
     image: img4,
     desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
     dimensions: "120cm X 80cm",
   },
-  {
-    id: 5,
-    image: img5,
-    desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
-    dimensions: "120cm X 80cm",
-  },
-  {
-    id: 6,
-    image: img6,
-    desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
-    dimensions: "120cm X 80cm",
-  },
+  // {
+  //   id: 5,
+  //   image: img5,
+  //   desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
+  //   dimensions: "120cm X 80cm",
+  // },
+  // {
+  //   id: 6,
+  //   image: img6,
+  //   desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
+  //   dimensions: "120cm X 80cm",
+  // },
   {
     id:7,
     image: img7,
@@ -53,5 +53,3 @@ const data = [
 ]
 
 export default data;
-
-console.log(data)
