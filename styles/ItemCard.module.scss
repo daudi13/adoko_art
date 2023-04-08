@@ -1,7 +1,29 @@
 .cardImage{
   margin-top: 70px;
+  position: relative;
 
   .img{
     border-radius: 13px;
+  }
+
+  .infoButton{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .desc{
+    position: absolute;
+    bottom: 0;
+    color:grey;
+    padding: 15px;
+    background-color: wheat;
+    border-radius: 10px;
   }
 }
