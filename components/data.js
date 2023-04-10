@@ -27,7 +27,7 @@ const data = [
   //   dimensions: "120cm X 80cm",
   // },
   {
-    id: 4,
+    id: 3,
     image: img4,
     desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
     dimensions: "120cm X 80cm",
@@ -45,7 +45,7 @@ const data = [
   //   dimensions: "120cm X 80cm",
   // },
   {
-    id:7,
+    id: 4,
     image: img7,
     desc: "This brooding painting depicts a stormy sky, with dark clouds gathering ominously overhead. The sky is a swirling mass of greys and blacks, with flashes of lightning illuminating the darkness. The horizon is barely visible, shrouded in a misty haze that adds to the sense of foreboding. The painting is moody and atmospheric, capturing the raw power of nature and the fleeting beauty of a passing storm.",
     dimensions: "120cm X 80cm",
