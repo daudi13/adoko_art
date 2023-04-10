@@ -1,0 +1,22 @@
+.container {
+  gap: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .img {
+    border-radius: 15px;
+    box-shadow: 14px 14px 12px 1px rgba(0,0,0,0.54);
+    -webkit-box-shadow: 14px 14px 12px 1px rgba(0,0,0,0.54);
+    -moz-box-shadow: 14px 14px 12px 1px rgba(0,0,0,0.54);
+  }
+
+  .desc {
+    max-width: 500px;
+
+    p{
+      font-size: 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+  }
+}
