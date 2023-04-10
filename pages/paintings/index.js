@@ -1,8 +1,16 @@
-import React from 'react'
+import styles from "@/styles/Paintings.module.scss"
+import data from "@/components/data"
+import ArtCard from "@/components/ArtCard"
 
 const index = () => {
   return (
-    <div>index page</div>
+    <div className={styles.container}>
+      {data?.map((card) => {
+        return (
+          <ArtCard card={card} key={card.id} />
+        )
+      }) }
+    </div>
   )
 }
 
