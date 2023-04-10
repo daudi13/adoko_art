@@ -1,13 +1,14 @@
 import img1 from "../public/images/boston-public-library-_f9cP4_unmg-unsplash.jpg"
 import img2 from "../public/images/europeana-5TK1F5VfdIk-unsplash.jpg"
-import img3 from "../public/images/europeana-6c43FgRt0Dw-unsplash.jpg"
+import img3 from "../public/images/andres-herrera-iOYbUXPNTCI-unsplash.jpg"
 import img4 from "../public/images/tamara-menzi-n-vnWQmmVoY-unsplash.jpg"
-import img5 from "../public/images/luca-nicoletti-O8CHmj0zgAg-unsplash.jpg"
-import img6 from "../public/images/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg"
+import img5 from "../public/images/wilhelm-gunkel-ZIQb1OkI7Ss-unsplash.jpg"
+import img6 from "../public/images/miti-7O_x-zaM_ug-unsplash.jpg"
 import img7 from "../public/images/birmingham-museums-trust-e0wBK0xJXYQ-unsplash.jpg"
+import img8 from "../public/images/geordanna-cordero-2Qg4y32pdCc-unsplash.jpg"
 
 
-const data = [
+const paintings = [
   {
     id: 1,
     image: img1,
@@ -51,5 +52,30 @@ const data = [
     dimensions: "120cm X 80cm",
   },
 ]
+
+export const sculptures = [
+  {
+    id: 5,
+    image: img3,
+    desc: "Winged Victory of Samothrace: This famous Hellenistic statue depicts the goddess Nike (Victory) standing atop a ship's prow with her wings spread. The sculpture is considered a masterpiece of Greek art and is one of the most popular exhibits in the Louvre. The dynamic pose and intricate details of the feathers and drapery convey a sense of motion and triumph."
+  },
+  {
+    id: 6,
+    image: img5,
+    desc: "The Venus de Milo: This ancient Greek statue of the goddess Aphrodite (Venus) was discovered on the island of Milos in 1820. The sculpture is missing its arms but still exudes a sense of grace and beauty. The flowing drapery and idealized proportions of the figure have made the Venus de Milo an icon of classical art."
+  },
+  {
+    id: 7,
+    image: img6,
+    desc: "The Dying Slave by Michelangelo: This sculpture is part of a series of unfinished sculptures known as the 'Prisoners' or 'Slaves' that Michelangelo created for the tomb of Pope Julius II. The figure of the Dying Slave appears to be struggling against his bonds and the weight of his own body. The unfinished state of the sculpture adds to its dramatic impact, with the rough-hewn stone seeming to reveal the struggle of the figure trapped inside."
+  },
+  {
+    id: 8,
+    image: img8,
+    desc: "Psyche Revived by Cupid's Kiss: This neoclassical sculpture by Antonio Canova depicts the mythological story of Cupid and Psyche. Cupid has revived Psyche with a kiss, bringing her back to life. The sculpture is notable for its smooth, polished surfaces and graceful lines, which emphasize the beauty and sensuality of the figures. The subject matter and style of the sculpture reflect the Enlightenment-era fascination with classical mythology and idealized beauty."
+  }
+]
+
+const data = { paintings, sculptures };
 
 export default data;
