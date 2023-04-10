@@ -1,11 +1,12 @@
 import styles from "@/styles/Paintings.module.scss"
-import data from "@/components/data"
+import data from "@/components/data";
 import ArtCard from "@/components/ArtCard"
 
 const index = () => {
+  const { paintings } = data;
   return (
     <div className={styles.container}>
-      {data?.map((card) => {
+      {paintings?.map((card) => {
         return (
           <ArtCard card={card} key={card.id} />
         )
