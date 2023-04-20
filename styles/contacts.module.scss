@@ -27,7 +27,7 @@
     -moz-box-shadow: 14px 14px 12px 1px rgba(0,0,0,0.54);
 
       .cardHeader{
-        padding: 10px;
+        padding: 20px;
 
         h3{
           font-size: 27px;
@@ -49,6 +49,19 @@
         gap: 30px;
         padding-top: 5%;
         margin-top: 10%;
+      }
+
+      .contentTwo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5%;
+        gap: 10px;
+
+        p{
+          font-size: 18px;
+          font-weight: 500;
+        }
       }
     }
   }
