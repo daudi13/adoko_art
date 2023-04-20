@@ -1,7 +1,6 @@
 import styles from "@/styles/contacts.module.scss"
 import { HiLocationMarker } from "react-icons/hi";
-import { AiOutlineWifi, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
-import { MdOutlinePhoneIphone } from "react-icons/md";
+import { AiTwotonePhone, AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import {BsPeopleFill} from "react-icons/bs";
 import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
@@ -28,17 +27,26 @@ const index = () => {
             <h3>Socials</h3>
           </div>
           <div className={styles.contentOne}>
-          <AiFillFacebook size={45} className={styles.icons} style={{color: "#3b5998"}}/>
-          <AiFillInstagram size={45} className={styles.icons} style={{color: "rgb(214,41,118)"}}/>
-          <FaTiktok size={40} className={styles.icons} />
+            <Link href="#">
+              <AiFillFacebook size={45} className={styles.icons} style={{color: "#3b5998"}}/>
+            </Link>
+            <Link href="#">
+              <AiFillInstagram size={45} className={styles.icons} style={{color: "rgb(214,41,118)"}}/>
+            </Link>
+            <Link href="#">
+              <FaTiktok size={40} className={styles.icons} />
+            </Link>
           </div>
         </div>
         <div className={styles.card}>
-          <MdOutlinePhoneIphone size={45} className={styles.icons} />
-          <h3>Phone</h3>
-          <p>+254 745294210</p>
-          <p>+254 745294210</p>
-          <p>+254 745294210</p>
+          <div className={styles.cardHeader}>
+            <AiTwotonePhone size={45} className={styles.icons} />
+            <h3>Contacts</h3>
+          </div>
+          <div className={styles.contentTwo}>
+            <Link href="tel:+254 745294210">+254 745294210</Link>
+            <Link href="mailto:info@adokoarts.com">info@adokoarts.com</Link>
+          </div>
         </div>
       </div>
       <div className={styles.contactForm}>
