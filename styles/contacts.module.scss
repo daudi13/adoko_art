@@ -2,8 +2,10 @@
   min-height: calc(100vh - 70px);
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   font-family: "Poppins", sans-serif;
+  position: relative;
 
   .cardWrapper{
     display: flex;
@@ -64,5 +66,23 @@
         }
       }
     }
+  }
+
+  .btn{
+    padding: 10px 5px;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 120%;
+    overflow-y: hidden;
+    z-index: 1000000;
+    width: 100%;
+    background-color: black;
   }
 }
