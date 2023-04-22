@@ -49,8 +49,10 @@ const index = () => {
           </div>
         </div>
       </div>
+      <button className={styles.btn}>Write to us</button>
       <div className={styles.contactForm}>
       </div>
+      <div className={styles.overlay}></div>
     </div>
   )
 }
