@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from "@/styles/Form.module.scss"
 
 const Form = () => {
   return (
@@ -12,8 +12,8 @@ const Form = () => {
     <input type="email" id="email" name="email" />
     </div>
     <div className={styles.formTags}>
-    <label for="content">content</label>
-    <textarea></textarea>
+    <label for="content">message</label>
+    <textarea rows="10"></textarea>
     </div>
     <button type="submit">Submit</button>
   </form>
