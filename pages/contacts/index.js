@@ -7,10 +7,11 @@ import Link from "next/link";
 import mapSnap from "public/images/Screenshot.png"
 import Image from "next/image";
 import Form from "@/components/Form";
-import { useEffect } from "react";
+import { useState } from "react";
 
 const index = () => {
-  const [email, setEmail] = useEffect(false)
+  const [open, setOpen] = useState(false);
+
   const map = "https://www.google.com/maps/place/Chondo+Chema/@-1.1551132,36.919464,18.84z/data=!4m9!1m2!10m1!1e1!3m5!1s0x182f3f3cf18e2abb:0x135b4039b9139dd6!8m2!3d-1.1557853!4d36.9183177!16s%2Fg%2F11k3pxr6zt"
   return (
     <div className={styles.container}>
@@ -52,10 +53,10 @@ const index = () => {
           </div>
         </div>
       </div>
-      <button className={styles.btn} onClick={() => setEmail(true)}>Write to us</button>
+      <button className={styles.btn} onClick={() => setOpen(true)}>Write to us</button>
       <div className={styles.contactForm}>
       </div>
-      {email && <div className={styles.overlay}><Form/></div>}
+      {open && <div className={styles.overlay} onClick={() => setOpen(false)}><Form/></div>}
     </div>
   )
 }
