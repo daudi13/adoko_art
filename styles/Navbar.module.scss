@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:wght@300;700&family=Work+Sans:wght@600;700&display=swap');
 
-$font-color: rgb(141, 141, 141);
-$primary-color: #000;
-
-
+@import "./partials.module";
+@import "./mixins.module";
 .nav{
 height: 70px;
 width: 100vw;
 position: fixed;
 font-family: 'Poppins', sans-serif;
-box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
--webkit-box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
--moz-box-shadow: -4px 12px 8px -5px rgba(0,0,0,0.55);
-display: flex;
-align-items: center;
-justify-content: space-between;
+@include box-shadow;
+@include flex;
 padding: 0 40px 0 20px;
-background-color: white;
+background-color: $secondary-clr;
 z-index: 1000;
 
 .logo {
@@ -38,9 +32,14 @@ z-index: 1000;
       transition: all 1s ease;
 
       &:hover{
-        color: $primary-color;
+        color: $primary-clr;
       }
     }
   }
+
+  @include respond-to($mobile){
+    display: none;
+  }
 }
+
 }
