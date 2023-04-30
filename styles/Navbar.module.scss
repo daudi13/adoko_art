@@ -40,6 +40,12 @@ z-index: 1000;
   @include respond-to($mobile){
     display: none;
   }
+
 }
 
+  .menuBtn{
+    @include respond-above($desktop){
+      display: none;
+    }
+  }
 }
