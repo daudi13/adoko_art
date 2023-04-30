@@ -1,5 +1,6 @@
 import styles from "@/styles/Navbar.module.scss"
 import Link from 'next/link'
+import { RxHamburgerMenu } from "react-icons/rx"
 
 const Navbar = () => {
   return (
@@ -16,6 +17,7 @@ const Navbar = () => {
           <li className={styles.navItem}><Link href="/contacts" passHref>Contacts</Link></li>
         </ul>
       </div>
+      <RxHamburgerMenu size={45} className={styles.menuBtn} />
     </div>
   )
 }
