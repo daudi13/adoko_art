@@ -16,14 +16,27 @@ z-index: 1000;
 .logo {
   flex: 2;
 }
-
 .navSection {
   flex: 1;
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: $font-color;
+  }
 
   .navItems{
     display: flex;
     list-style: none;
     justify-content: space-between;
+
+    @include respond-to($mobile) {
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
 
     .navItem{
       font-size: 16px;
@@ -38,7 +51,9 @@ z-index: 1000;
   }
 
   @include respond-to($mobile){
-    display: none;
+    @include position;
+    background-color: $secondary-clr;
+    height: 100vh;
   }
 
 }
