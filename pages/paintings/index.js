@@ -1,0 +1,18 @@
+import styles from "@/styles/Paintings.module.scss"
+import data from "@/components/data";
+import ArtCard from "@/components/ArtCard"
+
+const index = () => {
+  const { paintings } = data;
+  return (
+    <div className={styles.container}>
+      {paintings?.map((card) => {
+        return (
+          <ArtCard card={card} key={card.id} />
+        )
+      }) }
+    </div>
+  )
+}
+
+export default index

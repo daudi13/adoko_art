@@ -1,0 +1,27 @@
+.container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80vw;
+  margin: 0 auto;
+  padding-top: 150px;
+  padding-bottom: 75px;
+
+  *:first-child {
+    border-top: none !important;
+  }
+
+  * {
+
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+
+  }
+  ::first-letter {
+    font-size: 37px;
+    color: red;
+  }
+
+}

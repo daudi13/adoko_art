@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800&family=Poppins:wght@300;700&family=Work+Sans:wght@600;700&display=swap');
+
+@import "./partials.module";
+@import "./mixins.module";
+.nav{
+height: 70px;
+width: 100vw;
+position: fixed;
+font-family: 'Poppins', sans-serif;
+@include box-shadow;
+@include flex;
+padding: 0 40px 0 20px;
+background-color: $secondary-clr;
+z-index: 1000;
+
+.logo {
+  flex: 2;
+}
+.navSection {
+  flex: 1;
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: $font-color;
+  }
+
+  .navItems{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    @include respond-to($mobile) {
+      flex-direction: column;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navItem{
+      font-size: 16px;
+      line-height: 40px;
+      color: $font-color;
+      transition: all 1s ease;
+
+      &:hover{
+        color: $primary-clr;
+      }
+    }
+  }
+
+  @include respond-to($mobile){
+    @include position;
+    background-color: $secondary-clr;
+    height: 100vh;
+  }
+
+}
+
+  .menuBtn{
+    @include respond-above($desktop){
+      display: none;
+    }
+  }
+}

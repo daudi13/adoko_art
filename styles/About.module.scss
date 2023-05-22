@@ -1,0 +1,46 @@
+@import "./partials.module";
+@import "./mixins.module";
+
+.container {
+  min-height: calc(100vh - 70px);
+  padding-top: 70px;
+  @include flex;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+
+  .wrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .image{
+      margin-top: 5rem;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      @include box-shadow;
+    }
+
+    .underline{
+      height: 1.5px;
+      width: 100%;
+      background-color: red;
+    }
+
+    .descbox{
+      display: flex;
+      gap: 10rem;
+      margin-bottom: 3rem;
+
+      .artsistName{
+        flex: 1;
+      }
+
+      .desc{
+        flex: 2;
+        max-width: 600px;
+        text-align: justify;
+      }
+    }
+  }
+}
